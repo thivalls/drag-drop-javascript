@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #130f0b;
+  color: azure;
+  font-family: Nunito;
+}
+
+.boards {
+  width: 100%;
+  max-width: 800px;
+  padding: 0 24px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.board {
+  background-color: #141316;
+  border: 2px solid #FD951Fcc;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.board h3 {
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #FD951Fcc;
+}
+
+.card {
+  background-color: gray;
+  padding: 10px 10px;
+}
