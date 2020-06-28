@@ -6,7 +6,6 @@ const cards = document.querySelectorAll('.card');
 
 cards.forEach(card => {
   card.addEventListener('dragstart', dragstart);
-  // card.addEventListener('drag', drag);
   card.addEventListener('dragend', dragend);
 });
 
@@ -19,10 +18,6 @@ function dragstart(e) {
   this.classList.add('is-dragging');
 }
 
-// function drag() {
-  // log('while dragging card')
-// }
-
 function dragend() {
   log('dropped card')
   dropzones.forEach(dropzone => {
@@ -34,15 +29,9 @@ function dragend() {
 const dropzones = document.querySelectorAll('.dropzone');
 
 dropzones.forEach(dropzone => {
-  dropzone.addEventListener('dragenter', dragenter);
   dropzone.addEventListener('dragover', dragover);
   dropzone.addEventListener('dragleave', dragleave);
-  dropzone.addEventListener('drop', drop);
 });
-
-function dragenter() {
-  // log('DROPZONE -> ENTER IN DROP AREA')
-}
 
 function dragover() {
   this.classList.add('is-over');
@@ -52,9 +41,4 @@ function dragover() {
 
 function dragleave() {
   this.classList.remove('is-over');
-}
-
-function drop() {
-  // log('DROPZONE -> DROPPED')
-  // this.classList.remove('is-over');
 }
